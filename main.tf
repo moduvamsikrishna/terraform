@@ -3,7 +3,7 @@ resource "local_file" "my_pet" {
     content = var.content
   }
   resource "random_pet" "petname" {
-    prefix = "MR"
- separator = "."
- length = "1"
+    prefix = var.prefix
+ separator = var.separator
+ length = var.length
    }
